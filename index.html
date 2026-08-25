@@ -1,10 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Práctica Semana 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Ventas - Tienda de Ropa</title>
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+
+    <!-- CONTENEDOR PRINCIPAL EN REJILLA -->
+    <div class="grid-container">
+        
+        <!-- MENÚ LATERAL IZQUIERDO (SIDEBAR) -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <h2>SISVEN</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="active">Inventario / Productos</a>
+                <a href="#">Punto de Venta</a>
+                <a href="#">Reporte de Ventas</a>
+                <a href="#">Clientes</a>
+                <a href="#">Salir</a>
+            </nav>
+        </aside>
+
+        <!-- CONTENIDO DE LA DERECHA (ENCABEZADO, CUERPO Y PIE) -->
+        <div class="main-layout">
+            
+            <!-- ENCABEZADO -->
+            <header class="header">
+                <div class="header-title">
+                    <h1>Panel de Inventario de Ropa</h1>
+                    <p>Gestiona tus prendas, stock y precios</p>
+                </div>
+            </header>
+
+            <!-- CUERPO DE LA PÁGINA (PRODUCTOS) -->
+            <main class="content">
+                
+                <!-- Barra de acciones rápidas -->
+                <div class="action-bar">
+                    <button class="btn btn-primary">+ Agregar Prenda</button>
+                    <input type="text" class="search-input" placeholder="Buscar por código, prenda o categoría...">
+                </div>
+
+                <!-- Cuadrícula de Productos -->
+                <section class="products-grid">
+                    
+                    <!-- Producto 1 -->
+                    <article class="product-card">
+                        <span class="badge badge-stock">Stock: 24 u.</span>
+                        <img src="https://unsplash.com" alt="Polera Básica">
+                        <div class="product-info">
+                            <span class="category">Camisetas / Poleras</span>
+                            <h3>Polera Básica Algodón</h3>
+                            <p class="price">$15.99</p>
+                            <div class="card-actions">
+                                <button class="btn-icon">✏️ Editar</button>
+                                <button class="btn-icon btn-danger">🗑️ Quitar</button>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </main>
+
+            <!-- PIE DE PÁGINA -->
+            <footer class="footer">
+                <p>UCB V1.0 &copy; 2026 - Practica 1 </p>
+            </footer>
+
+        </div>
+    </div>
+
 </body>
 </html>
