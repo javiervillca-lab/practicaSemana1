@@ -26,60 +26,13 @@ h1 {
 	font-weight: 700;
 }
 
-.table-wrapper {
-	overflow-x: auto;
+.btn-secondary {
+	background-color: #e2e8f0;
+	color: #334155;
 }
 
-table {
-	width: 100%;
-	border-collapse: collapse;
-	border-radius: 8px;
-	overflow: hidden;
-}
-
-table caption {
-	font-size: 16px;
-	font-weight: 600;
-	color: #64748b;
-	margin-bottom: 15px;
-	text-align: left;
-}
-
-thead {
-	background-color: #38bdf8;
-	color: white;
-}
-
-th {
-	padding: 15px;
-	font-weight: 600;
-	text-align: left;
-	font-size: 14px;
-	letter-spacing: 0.5px;
-}
-
-tbody tr {
-	border-bottom: 1px solid #e2e8f0;
-	transition: background-color 0.2s ease;
-}
-
-tbody tr:hover {
-	background-color: #f8fafc;
-}
-
-tbody tr:last-child {
-	border-bottom: none;
-}
-
-td {
-	padding: 15px;
-	font-size: 14px;
-	color: #475569;
-}
-
-td:first-child {
-	font-weight: 600;
-	color: #1e293b;
+.btn-secondary:hover {
+	background-color: #cbd5e1;
 }
 
 .badge {

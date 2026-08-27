@@ -1,0 +1,75 @@
+body {
+    min-height: 100vh;
+    padding: 4px;
+}
+
+.sales-container {
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sales-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    margin-bottom: 8px;
+    color: #1e293b;
+    font-size: 28px;
+}
+
+.intro {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.sales-heading .btn {
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+.status {
+    display: inline-block;
+    padding: 4px 9px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-paid {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.status-pending {
+    background-color: #fef3c7;
+    color: #b45309;
+}
+
+@media (max-width: 600px) {
+    .sales-container {
+        padding: 16px 10px;
+    }
+
+    .sales-heading {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
