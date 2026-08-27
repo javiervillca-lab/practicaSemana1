@@ -19,8 +19,6 @@ body {
     min-height: 100vh;
 }
 
-
-
 /* DISEÑO DE LA SECCIÓN DERECHA */
 .main-layout {
     display: flex;
@@ -49,29 +47,22 @@ body {
     margin-top: 2px;
 }
 
-.user-profile {
-    background-color: #f1f5f9;
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
 /* CUERPO CENTRAL (ZONA SCROLLABLE) */
 .content {
     flex: 1;
-    padding: 30px;
-    overflow-y: auto; /* Permite scroll solo en los productos */
+    padding: 10px;
 }
 
 /* Botones */
 .btn {
-    padding: 10px 20px;
-    border: none;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
     border-radius: 6px;
     font-weight: 600;
     cursor: pointer;
     font-size: 0.9rem;
+    text-decoration: none;
 }
 
 .btn-primary {
@@ -83,70 +74,14 @@ body {
     background-color: #0ea5e9;
 }
 
-/* TARJETAS DE PRENDAS/PRODUCTOS */
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 25px;
+.btn-warning {
+    background-color: #f59e0b;
+    color: #ffffff;
 }
 
-.product-card {
-    background-color: #ffffff;
-    border-radius: 12px;
-    border: 1px solid #e2e8f0;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+.btn-warning:hover {
+    background-color: #eaa700;
 }
-
-.product-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-
-.product-info {
-    padding: 15px;
-}
-
-.product-info .category {
-    font-size: 0.75rem;
-    color: #94a3b8;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.product-info h3 {
-    font-size: 1rem;
-    color: #1e293b;
-    margin: 5px 0;
-}
-
-.product-info .price {
-    font-size: 1.15rem;
-    color: #0f172a;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.card-actions {
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid #f1f5f9;
-    padding-top: 10px;
-}
-
-.btn-icon {
-    background: none;
-    border: none;
-    font-size: 0.85rem;
-    color: #64748b;
-    cursor: pointer;
-}
-
-.btn-icon:hover { color: #38bdf8; }
-.btn-icon.btn-danger:hover { color: #ef4444; }
 
 /* PIE DE PÁGINA (FIXED AL FINAL DE LA VISTA) */
 .footer {
