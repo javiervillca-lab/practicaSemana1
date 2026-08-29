@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de ventas</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/ventas.css">
+    <link rel="stylesheet" href="styles/table.css">
+</head>
+<body>
+    <main class="sales-container">
+        <div class="sales-heading">
+            <div>
+                <h1>Registro de ventas</h1>
+                <p class="intro">Consulta las ventas realizadas con los productos del catálogo.</p>
+            </div>
+            <div class="heading-actions">
+                <a class="btn btn-primary" href="nueva_venta.html">+ Nueva venta</a>
+                <a class="btn btn-secondary" href="productos.html">Ver productos</a>
+            </div>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <caption>Historial de ventas</caption>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Producto</th>
+                        <th>Categoría</th>
+                        <th>Cantidad</th>
+                        <th>Precio unitario</th>
+                        <th>Total</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>26/08/2026</td>
+                        <td>Camiseta básica</td>
+                        <td><span class="badge">Ropa</span></td>
+                        <td>2</td>
+                        <td>Bs. 250</td>
+                        <td><strong>Bs. 500</strong></td>
+                        <td><span class="status status-paid">Completada</span></td>
+                    </tr>
+                    <tr>
+                        <td>25/08/2026</td>
+                        <td>Tenis deportivos</td>
+                        <td><span class="badge">Tenis</span></td>
+                        <td>1</td>
+                        <td>Bs. 1,200</td>
+                        <td><strong>Bs. 1,200</strong></td>
+                        <td><span class="status status-paid">Completada</span></td>
+                    </tr>
+                    <tr>
+                        <td>24/08/2026</td>
+                        <td>Sudadera con capucha</td>
+                        <td><span class="badge">Ropa</span></td>
+                        <td>1</td>
+                        <td>Bs. 650</td>
+                        <td><strong>Bs. 650</strong></td>
+                        <td><span class="status status-paid">Completada</span></td>
+                    </tr>
+                    <tr>
+                        <td>23/08/2026</td>
+                        <td>Jeans clásicos</td>
+                        <td><span class="badge">Ropa</span></td>
+                        <td>1</td>
+                        <td>Bs. 800</td>
+                        <td><strong>Bs. 800</strong></td>
+                        <td><span class="status status-pending">Pendiente</span></td>
+                    </tr>
+                    <tr>
+                        <td>22/08/2026</td>
+                        <td>Tenis casuales</td>
+                        <td><span class="badge">Tenis</span></td>
+                        <td>2</td>
+                        <td>Bs. 950</td>
+                        <td><strong>Bs. 1,900</strong></td>
+                        <td><span class="status status-paid">Completada</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

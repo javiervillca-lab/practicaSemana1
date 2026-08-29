@@ -1,0 +1,103 @@
+/* Configuración General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* DISTRIBUCIÓN GRID PRINCIPAL */
+.grid-container {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    min-height: 100vh;
+}
+
+/* DISEÑO DE LA SECCIÓN DERECHA */
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* ENCABEZADO */
+.header {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.header-title h1 {
+    font-size: 1.4rem;
+    color: #0f172a;
+}
+
+.header-title p {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-top: 2px;
+}
+
+/* CUERPO CENTRAL (ZONA SCROLLABLE) */
+.content {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #38bdf8;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #0ea5e9;
+}
+
+.btn-warning {
+    background-color: #f59e0b;
+    color: #ffffff;
+}
+
+.btn-warning:hover {
+    background-color: #eaa700;
+}
+
+.btn-secondary {
+    background-color: #e2e8f0;
+    color: #334155;
+}
+
+.btn-secondary:hover {
+    background-color: #cbd5e1;
+}
+
+/* PIE DE PÁGINA (FIXED AL FINAL DE LA VISTA) */
+.footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.85rem;
+    color: #64748b;
+    border-top: 1px solid #e2e8f0;
+}
