@@ -83,6 +83,15 @@ body {
     background-color: #eaa700;
 }
 
+.btn-secondary {
+    background-color: #e2e8f0;
+    color: #334155;
+}
+
+.btn-secondary:hover {
+    background-color: #cbd5e1;
+}
+
 /* PIE DE PÁGINA (FIXED AL FINAL DE LA VISTA) */
 .footer {
     background-color: #ffffff;
