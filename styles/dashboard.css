@@ -1,0 +1,49 @@
+.dashboard {
+    padding: 25px;
+}
+
+.welcome-row, .panel-heading, .metric-topline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.welcome-row h1 {
+    color: #1e293b;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.welcome-copy {
+    color: #64748b;
+}
+
+.dashboard-action { margin-bottom: 0; }
+.panel-link { background: transparent; color: #0284c7; padding: 0; }
+.panel-link:hover { background: transparent; color: #0369a1; }
+.cards-grid { 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px;
+    margin: 25px 0 18px; 
+}
+.card, .panel { background: white; border: 1px solid #d1d5db;    border-radius: 12px; }
+.card { padding: 18px; }
+.card-accent { border-top: 3px solid #f59e0b; }
+.metric-topline { color: #64748b; font-size: 14px; }
+.metric-icon { color: #0284c7; font-size: 18px; }
+.card strong { color: #1e293b; display: block; font-size: 25px; margin: 15px 0 7px; }
+.card p { color: #64748b; font-size: 12px; }
+.positive { color: #059669; }
+.warning { color: #d97706; }
+.panel { padding: 22px; }
+.panel h2 { color: #1e293b; font-size: 19px; }
+.activity-panel { padding-bottom: 10px; }
+.activity-table { color: #64748b; font-size: 13px; margin-top: 14px; }
+.activity-row { align-items: center; border-top: 1px solid #edf2f7; display: grid; gap: 16px; grid-template-columns: 2fr 1.2fr 1fr 0.7fr; padding: 13px 0; }
+.activity-head { border-top: 0; color: #94a3b8; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; }
+.product-cell { align-items: center; color: #334155; display: flex; gap: 9px; }.product-dot { height: 27px; width: 27px; }.status-complete, .status-pending { font-size: 12px; font-weight: 700; }.status-complete { color: #059669; }.status-pending { color: #d97706; }.amount { color: #1e293b; text-align: right; }.amount-heading { text-align: right; }
+
+@media (max-width: 900px) { .cards-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .dashboard { padding: 15px; }.welcome-row { align-items: flex-start; flex-direction: column; }.dashboard-action { width: 100%; text-align: center; }.cards-grid { gap: 10px; grid-template-columns: repeat(2, 1fr); margin-top: 20px; }.card { padding: 12px; }.card strong { font-size: 21px; }.panel { padding: 15px; }.activity-row { gap: 8px; grid-template-columns: 1.7fr 1.1fr 0.8fr; }.activity-row .amount, .amount-heading { display: none; }.activity-row > span:nth-child(2) { font-size: 11px; } }
