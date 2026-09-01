@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | SISVEN</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="styles/ventas.css">
+</head>
+<body>
+    <main class="dashboard">
+        <section class="welcome-row">
+            <div>
+                <h1>Buenos días, equipo</h1>
+                <p class="welcome-copy">Aquí tienes el pulso de tu tienda para hoy, 31 de agosto.</p>
+            </div>
+            <a class="btn btn-primary dashboard-action" href="nueva_venta.html">+ Registrar venta</a>
+        </section>
+
+        <section class="cards-grid" aria-label="Indicadores principales">
+            <article class="card card-accent">
+                <div class="metric-topline"><span>Ventas del mes</span><span class="metric-icon">↗</span></div>
+                <strong>Bs. 5,050</strong>
+                <p><span class="positive">+12.5%</span> frente al mes anterior</p>
+            </article>
+            <article class="card">
+                <div class="metric-topline"><span>Pedidos recibidos</span><span class="metric-icon">#</span></div>
+                <strong>24</strong>
+                <p><span class="positive">+8.2%</span> en los últimos 30 días</p>
+            </article>
+            <article class="card">
+                <div class="metric-topline"><span>Productos activos</span><span class="metric-icon">□</span></div>
+                <strong>128</strong>
+                <p><span class="warning">8 por reponer</span> en inventario</p>
+            </article>
+            <article class="card">
+                <div class="metric-topline"><span>Ticket promedio</span><span class="metric-icon">◒</span></div>
+                <strong>Bs. 210</strong>
+                <p><span class="positive">+4.6%</span> respecto a julio</p>
+            </article>
+        </section>
+
+        <section class="panel activity-panel">
+            <div class="panel-heading"><div><h2>Actividad reciente</h2></div><a href="ventas.html" class="panel-link">Ver todas las ventas</a></div>
+            <div class="activity-table">
+                <div class="activity-row activity-head"><span>Producto</span><span>Fecha</span><span>Estado</span><span class="amount-heading">Total</span></div>
+                <div class="activity-row"><span class="product-cell"><span class="product-dot">C</span>Camiseta básica</span><span>26 ago, 2026</span><span class="status status-paid">Completada</span><strong class="amount">Bs. 500</strong></div>
+                <div class="activity-row"><span class="product-cell"><span class="product-dot dot-orange">T</span>Tenis deportivos</span><span>25 ago, 2026</span><span class="status status-paid">Completada</span><strong class="amount">Bs. 1,200</strong></div>
+                <div class="activity-row"><span class="product-cell"><span class="product-dot dot-purple">J</span>Jeans clásicos</span><span>23 ago, 2026</span><span class="status status-pending">Pendiente</span><strong class="amount">Bs. 800</strong></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
